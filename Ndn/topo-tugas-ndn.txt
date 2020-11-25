@@ -1,0 +1,128 @@
+router
+
+# each line in this section represents one router and should have the following data
+# node  comment     lat         lon
+
+# Main Routers
+WAINGAPU      NA        -9.738686        120.182022
+SABU          NA        -10.155466       122.194704
+BAA           NA        -10.686076       123.110583
+KUPANG        NA        -10.1771997      123.6070329
+ALOR          NA        -8.292843        124.552839
+WETAR         NA        -7.785159        126.34981
+TIAKUR        NA        -8.143948        127.79003
+SAUMLAKI      NA        -8.052236        131.213053
+TUAL          NA        -5.626563        132.752087
+DOBO          NA        -5.755787        134.217407
+TIMIKA        NA        -4.546759        136.883721
+TIGI          NA        -4.063518        136.27617
+KIGAMANI      NA        -4.105264        135.884959
+ENAROTALI     NA        -3.936931        136.382168
+SUGAPA        NA        -3.798024        137.019391
+ILAGA         NA        -4.084596        137.186607
+KOTA-MULIA    NA        -3.729199        137.983597
+TIOM          NA        -4.07833333      138.17472222
+KARUBAGA      NA        -3.676137        138.488722
+KOBAKMA	      NA        -3.670197        139.081712
+ELELIM        NA        -3.814676        139.405944
+JAYAPURA      NA        -2.591602        140.669
+WARIS	      NA        -3.215882        140.986251
+WAMENA	      NA        -4.094645        138.947996 	
+KENYAMH	      NA        -4.45083333      138.10083333		
+SUMOHAI	      NA        -4.68944         139.35472
+DEKAI         NA        -5               139.629501
+OKSIBIL       NA        -4.907442        140.629501
+WAROPKO       NA        -5.481           140.8873
+TANAH-MERAH   NA        -6.083           140.283
+MERAUKE       NA        -8.467           140.333
+KEPI          NA        -6.517057        139.317093
+AGATS         NA        -5.535626        138.121359
+NABIRE        NA        -3.372225        135.501625
+RAISEI        NA        -2.81539         134.523114
+RANSIKI       NA        -1.503401        134.181518
+ANGGI         NA        -1.305548        133.924601
+BINTUNI       NA        -2.09926         133.599128
+TANGGUH       NA        -2.452591        133.142546
+TEMINABUAN    NA        -1.432801        132.058389
+AIFAT         NA        -1.279888        132.452814
+SORONG        NA        -0.881999        131.295483
+FEF           NA        -0.808642        132.511724
+MANOKWARI     NA        -0.861453        134.062042
+NUMFOR        NA        -0.995401        134.887958
+SORENDIWERI   NA        -0.739576        135.727411
+BIAK          NA        -1.038102        135.980085
+SERUI         NA        -1.878015        136.236664
+BOTAWA        NA        -2.316379        136.381666
+BURMESO       NA        -2.291726        138.100202
+SARMI         NA        -1.852697        138.750755
+
+
+# Peers
+
+# link section defines point-to-point links between nodes and characteristics of these links
+link
+
+# Each line should be in the following format (only first two are required, the rest can be omitted)
+# srcNode   dstNode     bandwidth   metric  delay   queue
+# bandwidth: link bandwidth
+# metric: routing metric
+# delay:  link delay
+# queue:  MaxPackets for transmission queue on the link (both directions)
+# 
+## JAPAN
+WAINGAPU    SABU        80Gbps       1       10ms    10
+SABU        BAA         80Gbps       1       10ms    10
+BAA         KUPANG      80Gbps       1       10ms    10
+KUPANG      ALOR        80Gbps       1       10ms    10
+ALOR        WETAR       80Gbps       1       10ms    10
+WETAR       TIAKUR      80Gbps       1       10ms    10
+TIAKUR      SAUMLAKI    80Gbps       1       10ms    10
+SAUMLAKI    TUAL        80Gbps       1       10ms    10
+TUAL        DOBO        80Gbps       1       10ms    10
+DOBO        TIMIKA      80Gbps       1       10ms    10
+TIMIKA      TIGI        80Gbps       1       10ms    10
+TIGI        KIGAMANI    80Gbps       1       10ms    10
+TIGI        ENAROTALI   80Gbps       1       10ms    10
+KIGAMANI    NABIRE      80Gbps       1       10ms    10
+ENAROTALI   SUGAPA      80Gbps       1       10ms    10
+ENAROTALI   ILAGA       80Gbps       1       10ms    10
+SUGAPA      KOTA-MULIA  80Gbps       1       10ms    10
+ILAGA       KOTA-MULIA  80Gbps       1       10ms    10
+KOTA-MULIA  KARUBAGA    80Gbps       1       10ms    10
+TIOM        KARUBAGA    80Gbps       1       10ms    10
+TIOM        KOBAKMA     80Gbps       1       10ms    10
+KARUBAGA    KOBAKMA     80Gbps       1       10ms    10
+KOBAKMA     ELELIM      80Gbps       1       10ms    10
+ELELIM      JAYAPURA    80Gbps       1       10ms    10
+JAYAPURA    WARIS       80Gbps       1       10ms    10
+ELELIM      WAMENA      80Gbps       1       10ms    10
+WAMENA      KENYAMH     80Gbps       1       10ms    10
+WAMENA      SUMOHAI     80Gbps       1       10ms    10
+KENYAMH     SUMOHAI     80Gbps       1       10ms    10
+SUMOHAI     DEKAI       80Gbps       1       10ms    10
+DEKAI       OKSIBIL     80Gbps       1       10ms    10
+DEKAI       WAROPKO     80Gbps       1       10ms    10
+OKSIBIL     WAROPKO     80Gbps       1       10ms    10
+WAROPKO     TANAH-MERAH 80Gbps       1       10ms    10
+TANAH-MERAH MERAUKE     80Gbps       1       10ms    10
+NABIRE      RAISEI      80Gbps       1       10ms    10
+NABIRE      BOTAWA      80Gbps       1       10ms    10
+RAISEI      RANSIKI     80Gbps       1       10ms    10
+RANSIKI     ANGGI       80Gbps       1       10ms    10
+RANSIKI     BINTUNI     80Gbps       1       10ms    10
+RANSIKI     MANOKWARI   80Gbps       1       10ms    10
+BINTUNI     TANGGUH     80Gbps       1       10ms    10
+TANGGUH     TEMINABUAN  80Gbps       1       10ms    10
+TEMINABUAN  AIFAT       80Gbps       1       10ms    10
+AIFAT       SORONG      80Gbps       1       10ms    10
+SORONG      FEF         80Gbps       1       10ms    10
+MANOKWARI   NUMFOR      80Gbps       1       10ms    10
+NUMFOR      SORENDIWERI 80Gbps       1       10ms    10
+SORENDIWERI BIAK        80Gbps       1       10ms    10
+BIAK        SERUI       80Gbps       1       10ms    10
+SERUI       BOTAWA      80Gbps       1       10ms    10
+BOTAWA      BURMESO     80Gbps       1       10ms    10
+BURMESO     SARMI       80Gbps       1       10ms    10
+TIMIKA      AGATS       80Gbps       1       10ms    10
+AGATS       KEPI        80Gbps       1       10ms    10
+KEPI        TANAH-MERAH 80Gbps       1       10ms    10
